@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'home/css/styleHome.css' %}">
+    <title>Teste </title>
+   
+</head>
+<body>
+    <div class="teste">
+        <h1>Página Teste</h1>
+    </div>
+
+    {% block 'conteudo' %}
+    <h2> Aqui vai o conteudo de cada pagina </h2>
+    {% endblock %}
+    
+    
+</body>
+</html>
