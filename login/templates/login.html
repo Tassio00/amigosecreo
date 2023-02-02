@@ -1,0 +1,28 @@
+{% load static %}
+
+{% block 'style' %}
+<link rel="stylesheet" href="{% static 'login/css/styleLogin.css' %}">
+{% endblock %}
+
+<div class="page">
+        
+    <img class="imgFundoLogin" src="{%static '/login/img/imgpresente.jpg'%}" id="imagem de fundo">
+    <div class="content">
+        <div class="infoLogin">
+            
+            <h2 class="textInfo">
+                Faça seu login e reaize amigos secretos de forma prática!
+            </h2>
+
+        </div>
+        <div class="bk-loginBox">
+            <div class="loginBox">
+                <h2 class="title-loinBox">Login<h2>
+                <div class="field1"><input type="userName" id="userName" placeholder="Nome de usuário"></div>
+                <div class="field2"><input type="emailField" id="emailField" placeholder="Digite seu e-mail"></div>
+            
+            </div>
+        </div>
+    
+    </div>
+</div>

@@ -1,0 +1,44 @@
+.page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    heigth: 100vh;
+}
+.content{
+    display: flex;
+    width: 90%;
+}
+
+.infoLogin{
+    width: 50%;
+}
+.imgFundoLogin{
+    
+
+    
+    
+}
+
+
+.bk-loginBox{
+    position: absoluted;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+.loginBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1.5px solid #000000;
+    border-radius: 15px;
+    padding: 2% 8%;
+}
+
+
+
+
+
+
+
