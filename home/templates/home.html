@@ -5,23 +5,56 @@
 {% block 'style' %}
 <link rel="stylesheet" href="{% static 'home/css/styleHome.css' %}">
 {% endblock %}
-<head>
-    
-    {% block 'title' %}
-        <title>AmigoSecret-</title>
-    {% endblock %}
-    
-   
-</head>
-<body>
-    
-    {% block 'conteudo' %}
 
-    <h1>Home</h1>
+    
+{% block 'title' %}
+    <title>AmigoSecret-</title>
+{% endblock %}
 
 
-    {% endblock %}
+{% block 'content' %}
+
+
+<div class="bk-nav f_cor2">
+    <div class="card-logo">
+        <a class= "corletras">LOGO</a>
+    </div>
     
+    <div class="card-menu-nav">
+        <a class="corletras" href="">Histórico</a>
+        <a class="corletras" href="">Configurações</a>
+        <button>Sair</button>
+    </div>
     
-</body>
-</html>
+</div><br>
+
+
+<div class="bk-list">
+    <div class="topo-list f_corbkCard">
+        <input type="text" id="participante-name" placeholder="Novo participante">
+        <input type="text" id="email-participante" placeholder="E-mail do participante">
+        <span class="material-symbols-outlined cor2">add</span>
+    </div>
+
+    
+    <ul class="f_corbkCard"  id="listaParticipantes ">
+        <li class="elemntlist">
+            <span class="participante">Participante 1</span>
+            <div>
+                <span class="material-symbols-outlined">edit</span>
+                <span class="material-symbols-outlined">delete</span> 
+            </div>
+            <li class="elemntlist">
+                <span class="participante">Participante 2</span>
+                <div>
+                    <span class="material-symbols-outlined">edit</span>
+                    <span class="material-symbols-outlined">delete</span> 
+                </div>
+            </li>
+        </li>
+    </ul>
+</div>
+
+
+{% endblock %}
+    

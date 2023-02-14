@@ -1,4 +1,54 @@
 
-h1{
-    color: red;
+body{
+    margin: 0;
+    width: 100vw;
+    background: #0d002e;
+}
+.bk-nav{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card-logo{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+.card-logo > a{
+    padding: 2%;
+}
+
+.card-menu-nav{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+.card-menu-nav > a{
+    padding-right: 2%;
+}
+
+
+
+
+
+.bk-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elemntlist{
+    display: flex;
+}
+.topo-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

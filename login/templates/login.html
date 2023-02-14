@@ -1,28 +1,34 @@
+
 {% load static %}
+
 
 {% block 'style' %}
 <link rel="stylesheet" href="{% static 'login/css/styleLogin.css' %}">
+<link rel="stylesheet" href="{% static 'cores.css' %}">
 {% endblock %}
 
-<div class="page">
-        
-    <img class="imgFundoLogin" src="{%static '/login/img/imgpresente.jpg'%}" id="imagem de fundo">
-    <div class="content">
-        <div class="infoLogin">
-            
-            <h2 class="textInfo">
-                Faça seu login e reaize amigos secretos de forma prática!
-            </h2>
 
-        </div>
-        <div class="bk-loginBox">
-            <div class="loginBox">
-                <h2 class="title-loinBox">Login<h2>
-                <div class="field1"><input type="userName" id="userName" placeholder="Nome de usuário"></div>
-                <div class="field2"><input type="emailField" id="emailField" placeholder="Digite seu e-mail"></div>
-            
+{% block 'coonten' %}
+
+<div class="page-login f_corbktela">
+    <div class="esquerdo-login">
+    <h1 class="cor2">FAÇA LOGIN</h1> <br> <h1 class="cor2">E CRIE AMIGOS SECRETOS</h1>
+    <p class="corletras">imagem</p>
+    </div>
+    <div class="direito-login">
+        <div class="card-login">
+            <h1 class="titulo-login">LOGIN</h1>
+            <div class="textfild">
+                <label for="usuario-login">Usuário</label>
+                <input type="text" name="usuario" placeholder="Usuário"></input>
             </div>
+            <div class="textfild">
+                <label for="Senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha"></inpu>
+            </div>
+            <button>Entrar</button>
         </div>
-    
     </div>
 </div>
+
+{% endblock %}

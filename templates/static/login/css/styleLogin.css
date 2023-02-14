@@ -1,44 +1,68 @@
-.page{
+body{
+    margin:0
+}
+
+.page-login{
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    heigth: 100vh;
-}
-.content{
-    display: flex;
-    width: 90%;
-}
-
-.infoLogin{
-    width: 50%;
-}
-.imgFundoLogin{
-    
-
-    
     
 }
 
-
-.bk-loginBox{
-    position: absoluted;
-    width: 50%;
+.esquerdo-login{
+    width: 50vw;
+    
     display: flex;
-    flex-direction: column;
-    align-items: center
-}
-.loginBox{
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    border: 1.5px solid #000000;
+    flex-direction: column;
+    
+}
+.esquerdo-login > h1{
+    
+}
+.direito-login{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 0px;
+    background: #352d48;
+    border-radius: 16px;
+    box-shadow: 2px 4px 8px 0px #0000007a;
+}
+.card-login > h1{
+    margin 0;
+}
+
+.textfild{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 75%;
+    margin: 3px;
+}
+.textfild > input{
+    width: 100%;
+    
+    border: none;
     border-radius: 15px;
-    padding: 2% 8%;
+    padding: 5px 0px;
+    
+    outline:none;
+    box-sizing: border-box;
+    box-shadow: 2px 3px 8px 0px #0000007a;
 }
-
-
-
-
-
-
-
+.textfild > label{
+    margin: 10px;
+}
