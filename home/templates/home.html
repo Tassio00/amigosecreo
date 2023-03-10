@@ -30,29 +30,40 @@
 
 
 <div class="bk-list">
+    
     <div class="topo-list f_corbkCard">
-        <input type="text" id="participante-name" placeholder="Novo participante">
-        <input type="text" id="email-participante" placeholder="E-mail do participante">
-        <span class="material-symbols-outlined cor2">add</span>
+        <input type="text" id="participante_name" placeholder="Novo participante">
+        <input type="text" id="email_participante" placeholder="E-mail do participante">
+        <span class="material-symbols-outlined cor2" id="btnaddparticipante">add</span>
     </div>
 
     
-    <ul class="f_corbkCard"  id="listaParticipantes ">
-        <li class="elemntlist">
-            <span class="participante">Participante 1</span>
+    <ul class="f_corbkCard"  id="listaParticipantes">
+        <li class="elemntlist topo-list">
+            <span class="n_participante">Participante 1</span>
+            <span class="e_participante">email 1</span>
             <div>
                 <span class="material-symbols-outlined">edit</span>
                 <span class="material-symbols-outlined">delete</span> 
             </div>
-            <li class="elemntlist">
-                <span class="participante">Participante 2</span>
-                <div>
-                    <span class="material-symbols-outlined">edit</span>
-                    <span class="material-symbols-outlined">delete</span> 
-                </div>
-            </li>
         </li>
     </ul>
+</div>
+
+<div class= "containerListaDeUsuarios f_corbkCard">
+    {% for userList in userList  %}
+    <div class= "listaDeUsuarios">
+        <div class= "topicos">
+            {{userList.nome}}
+            {{userList.email}}
+            <button>Editar</button>
+            <button><a href="{% url 'dellUsuario' userList.id %}">Remover</a></button>
+        </div>
+    
+    </div>
+    {% endfor %}
+    
+    <button>Sortear</button>
 </div>
 
 

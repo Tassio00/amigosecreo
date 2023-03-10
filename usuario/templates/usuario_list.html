@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'style' %}
+<link rel="stylesheet" href="{% static 'home/css/styleHome.css' %}">
+{% endblock %}
+
+    
+{% block 'title' %}
+    <title>formulario</title>
+{% endblock %}
+
+
+{% block 'content' %}
+
+
+<div class="form-body">
+    <div class="row">
+        <div class="form-holder">
+            <div class="form-content">
+                <div class="form-items">
+                    <h3>Register Today</h3>
+                    <p>Fill in the data below.</p>
+                    <form class="requires-validation" method= "post" action= "{% url 'addUsuario' %}"> {% csrf_token %}
+
+                        <div class="col-md-12">
+                           <input class="form-control" type="text" name="user" placeholder="Nome" required>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input class="form-control" type="email" name="email" placeholder="E-mail" required>
+                        </div>
+
+                        <div class="form-button mt-3">
+                            <button id="submit" type="submit" class="btn btn-primary">Adicionar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
